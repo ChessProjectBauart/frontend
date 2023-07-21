@@ -41,11 +41,15 @@ export default function App() {
 
   return (
     <div className="App">
-      <ChessboardWrapper></ChessboardWrapper>
-      <ConnectionState isConnected={isConnected} />
-      <Events events={fooEvents} />
-      <ConnectionManager />
-      <MyForm />
+      <div className="Chessboard">
+        <ChessboardWrapper></ChessboardWrapper>
+      </div>
+      {/* <div>
+        <ConnectionState isConnected={isConnected} />
+        <Events events={fooEvents} />
+        <ConnectionManager />
+        <MyForm />
+      </div> */}
     </div>
   );
 }
